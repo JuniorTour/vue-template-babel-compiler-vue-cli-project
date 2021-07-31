@@ -1,17 +1,35 @@
 <template>
   <div id="app">
+    <h2 v-if="optional?.chaining">
+      Optional Chaining enabled: {{optional?.chaining}}
+    </h2>
+    <h2>{{null ?? 'Nullish Coalescing enabled'}}</h2>
+    <h2>{{BigInt(9007199254740991)}}</h2>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FunctionalComponent msg="FunctionalComponent valid" />
+    <HelloWorld v-slot:default="slotProps"
+                msg="Welcome to Your Vue.js App">
+      {{ slotProps.dataMsg }}
+    </HelloWorld>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import FunctionalComponent from './components/FunctionalComponent.functional.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    FunctionalComponent,
+  },
+  data() {
+    return {
+      optional: {
+        chaining: true,
+      }
+    }
   }
 }
 </script>

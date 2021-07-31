@@ -1,6 +1,11 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h4>
+      <slot v-bind:dataMsg="dataMsg">
+        content
+      </slot>
+    </h4>
+    <h4>{{ msg }}</h4>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,6 +40,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      dataMsg: 'v-slot valid'
+    }
   }
 }
 </script>
