@@ -8115,10 +8115,10 @@ vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-babel-compiler@1.0.0-0:
-  version "1.0.0-0"
-  resolved "https://registry.yarnpkg.com/vue-template-babel-compiler/-/vue-template-babel-compiler-1.0.0-0.tgz#0726c44cc64a6581d1c6e592060d4a40eaba5225"
-  integrity sha512-ZaHRNofTMEwJvomZQ3a7+jiKE+ayvzP1IdNyRBjfk7rEfVfMgVUcWSNL47uoDIVQ5eKGfrIwRMAX+LuStfeEKQ==
+vue-template-babel-compiler@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-template-babel-compiler/-/vue-template-babel-compiler-1.0.0.tgz#44802e712445760714e0f195296cccb05ad690ca"
+  integrity sha512-7rVpn2aZ2wnd70/W3ctaiTS+HRlWvKuttOPJf4qm3he+0vUIX6XgRy4XRmYSfXnALNXv9sdgkYJqOw3oonsdew==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
